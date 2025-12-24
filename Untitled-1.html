@@ -1,0 +1,20 @@
+<form onsubmit="envoyerWhatsApp(event)">
+    <label>Nom</label>
+    <input type="text" id="nom" required>
+
+    <label>Téléphone</label>
+    <input type="tel" id="tel" required>
+
+    <label>Adresse</label>
+    <input type="text" id="adresse" required>
+
+    <label>Type de Shawarma</label>
+    <select id="shawarma" required>
+        <option>Shawarma Poulet</option>
+        <option>Shawarma Viande</option>
+        <option>Shawarma Mixte</option>
+        <option>Shawarma Fromage</option>
+    </select>
+
+    <button type="submit">Envoyer via WhatsApp</button>
+</form>
