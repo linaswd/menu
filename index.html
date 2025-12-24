@@ -1,30 +1,27 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-
-    
     <meta charset="UTF-8">
-    <title>Restaurant Lina 🍽️</title>
+    <title>Shawarma House 🌯</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- CSS -->
     <style>
         body {
             margin: 0;
             font-family: Arial, sans-serif;
-            background-color: #f8f8f8;
+            background-color: #f9f6f2;
             color: #333;
         }
 
         header {
-            background-color: #8b0000;
+            background-color: #7a2e00;
             color: white;
-            padding: 20px;
+            padding: 25px;
             text-align: center;
         }
 
         nav {
-            background-color: #a00000;
+            background-color: #9c3d00;
             padding: 10px;
             text-align: center;
         }
@@ -42,36 +39,38 @@
 
         section {
             padding: 30px;
-            max-width: 1000px;
+            max-width: 900px;
             margin: auto;
         }
 
         h2 {
-            color: #8b0000;
-            margin-bottom: 15px;
+            color: #7a2e00;
+            margin-bottom: 20px;
         }
 
         .menu-item {
             background: white;
-            padding: 15px;
+            padding: 15px 20px;
             margin-bottom: 15px;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            border-radius: 10px;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.1);
             display: flex;
             justify-content: space-between;
+            align-items: center;
         }
 
         button {
-            background-color: #8b0000;
+            background-color: #7a2e00;
             color: white;
             border: none;
-            padding: 10px 15px;
-            border-radius: 5px;
+            padding: 10px 18px;
+            border-radius: 6px;
             cursor: pointer;
+            font-size: 15px;
         }
 
         button:hover {
-            background-color: #600000;
+            background-color: #5a2100;
         }
 
         footer {
@@ -94,8 +93,8 @@
 <body>
 
 <header>
-    <h1>🍴 Restaurant Lina</h1>
-    <p>Cuisine traditionnelle & moderne</p>
+    <h1>🌯 Shawarma House</h1>
+    <p>Le vrai goût du shawarma oriental</p>
 </header>
 
 <nav>
@@ -105,26 +104,31 @@
 </nav>
 
 <section id="menu">
-    <h2>📋 Notre Menu</h2>
+    <h2>📋 Notre Menu Shawarma</h2>
 
     <div class="menu-item">
-        <span>🍕 Pizza Margherita</span>
-        <span>45 DH</span>
+        <span>🐔 Shawarma Poulet</span>
+        <span>35 DH</span>
     </div>
 
     <div class="menu-item">
-        <span>🍔 Burger Maison</span>
-        <span>55 DH</span>
-    </div>
-
-    <div class="menu-item">
-        <span>🥗 Salade César</span>
+        <span>🥩 Shawarma Viande</span>
         <span>40 DH</span>
     </div>
 
     <div class="menu-item">
-        <span>🍝 Pâtes Carbonara</span>
-        <span>50 DH</span>
+        <span>🌯 Shawarma Mixte (Poulet & Viande)</span>
+        <span>45 DH</span>
+    </div>
+
+    <div class="menu-item">
+        <span>🧀 Shawarma Fromage</span>
+        <span>38 DH</span>
+    </div>
+
+    <div class="menu-item">
+        <span>🔥 Shawarma Spicy</span>
+        <span>40 DH</span>
     </div>
 
     <button onclick="commander()">Commander</button>
@@ -133,29 +137,10 @@
 <section id="contact">
     <h2>📞 Contact</h2>
     <p><strong>Téléphone :</strong> +212 6 12 34 56 78</p>
-    <p><strong>Email :</strong> contact@restaurantlina.ma</p>
-    <p><strong>Horaires :</strong> Tous les jours de 10h à 23h</p>
+    <p><strong>Email :</strong> contact@shawarmahouse.ma</p>
+    <p><strong>Horaires :</strong> Tous les jours de 11h à 00h</p>
 </section>
 
 <section id="localisation">
     <h2>📍 Localisation</h2>
-
-    <!-- Google Maps -->
-    <iframe 
-        src="https://www.google.com/maps?q=Casablanca&output=embed">
-    </iframe>
-</section>
-
-<footer>
-    <p>© 2025 Restaurant Lina — Tous droits réservés</p>
-</footer>
-
-<!-- JavaScript -->
-<script>
-    function commander() {
-        alert("Merci pour votre commande 🍽️\nNous vous contacterons bientôt !");
-    }
-</script>
-
-</body>
-</html>
+    <iframe src="https
