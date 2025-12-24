@@ -22,7 +22,7 @@ body {
 }
 
 /* HEADER */
-   header {
+header {
     background-image: 
         linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
         url("https://th.bing.com/th/id/R.255a341322e12df290c7156c76e892b9?rik=mt4a1SGo7HSMmg&riu=http%3a%2f%2fqatarsurvivalguide.com%2fwp-content%2fuploads%2f2016%2f08%2fshawarma.jpg&ehk=USHanuWp%2ffkiToLTw9F0JpDwvJnsU7s9ckxKy7Pj4oM%3d&risl=&pid=ImgRaw&r=0");
@@ -31,8 +31,6 @@ body {
     color: white;
     padding: 100px 20px;
     text-align: center;
-}
-
 }
 
 header h1 {
@@ -90,10 +88,13 @@ section h2 {
     border-radius: 15px;
     box-shadow: 0 8px 20px rgba(0,0,0,0.1);
     text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.menu-card h3 {
-    margin-bottom: 10px;
+.menu-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.15);
 }
 
 .price {
@@ -178,29 +179,35 @@ footer {
 <h2>Notre Menu</h2>
 
 <div class="menu-grid">
-    <div class="menu-card">
+
+    <div class="menu-card" onclick="commanderRapide('Shawarma Poulet','35 DH')">
         <h3>Shawarma Poulet</h3>
         <p>Poulet mariné & sauce maison</p>
         <p class="price">35 DH</p>
+        <button>Commander</button>
     </div>
 
-    <div class="menu-card">
+    <div class="menu-card" onclick="commanderRapide('Shawarma Viande','40 DH')">
         <h3>Shawarma Viande</h3>
         <p>Bœuf épicé oriental</p>
         <p class="price">40 DH</p>
+        <button>Commander</button>
     </div>
 
-    <div class="menu-card">
+    <div class="menu-card" onclick="commanderRapide('Shawarma Mixte','45 DH')">
         <h3>Shawarma Mixte</h3>
         <p>Poulet + viande</p>
         <p class="price">45 DH</p>
+        <button>Commander</button>
     </div>
 
-    <div class="menu-card">
+    <div class="menu-card" onclick="commanderRapide('Shawarma Fromage','38 DH')">
         <h3>Shawarma Fromage</h3>
         <p>Fondant & savoureux</p>
         <p class="price">38 DH</p>
+        <button>Commander</button>
     </div>
+
 </div>
 </section>
 
@@ -213,7 +220,7 @@ footer {
     <input type="tel" id="tel" placeholder="Téléphone" required>
     <input type="text" id="adresse" placeholder="Adresse" required>
 
-    <select id="produit">
+    <select id="produit" required>
         <option>Shawarma Poulet</option>
         <option>Shawarma Viande</option>
         <option>Shawarma Mixte</option>
@@ -250,19 +257,31 @@ function envoyerWhatsApp(e) {
     const adresse = document.getElementById("adresse").value;
     const produit = document.getElementById("produit").value;
 
-    const numero = "+212682300363"; // ⚠️ change ce numéro
+    const numero = "212682300363";
 
     const message = `
-🌯 Nouvelle commande - Shawarma Palace
+🌯 Nouvelle commande
 
- Nom : ${nom}
- Téléphone : ${tel}
- Adresse : ${adresse}
- Produit : ${produit}
+👤 Nom : ${nom}
+📞 Téléphone : ${tel}
+🏠 Adresse : ${adresse}
+🍽️ Produit : ${produit}
 `;
 
-    const url = `https://wa.me/${numero}?text=${encodeURIComponent(message)}`;
-    window.open(url, "_blank");
+    window.open(`https://wa.me/${numero}?text=${encodeURIComponent(message)}`, "_blank");
+}
+
+function commanderRapide(produit, prix) {
+    const numero = "212682300363";
+
+    const message = `
+🌯 Commande rapide
+
+🍽️ Produit : ${produit}
+💰 Prix : ${prix}
+`;
+
+    window.open(`https://wa.me/${numero}?text=${encodeURIComponent(message)}`, "_blank");
 }
 </script>
 
