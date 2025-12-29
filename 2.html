@@ -2,12 +2,11 @@
 <html lang="fr">
 <head>
 <meta charset="UTF-8">
-<title>Shawarma Palace </title>
+<title>شوارما البيك</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- GOOGLE FONT -->
-<!-- GOOGLE FONT ARABE -->
-<link href="https://fonts.googleapis.com/css2?family=Amiri&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Amiri&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
 <style>
 * {
@@ -15,14 +14,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-    iframe {
-    width: 100%;
-    max-width: 600px;
-    height: 400px;
-    border: 0;
-    border-radius: 15px;
-}
-
 }
 
 body {
@@ -34,7 +25,7 @@ body {
 header {
     background-image: 
         linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-        url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjtT7CJleA3YljtE2c_Rs32NcAVO4a2K4JxQ&s");
+        url("https://cloudfront-eu-central-1.images.arcpublishing.com/leparisien/XXGRF3PB5RBT5CMHODHTA4LMQI.jpg");
     background-size: cover;
     background-position: center;
     color: white;
@@ -50,7 +41,6 @@ header h1 {
 header p {
     font-size: 18px;
 }
-
 
 /* NAV */
 nav {
@@ -131,6 +121,15 @@ button:hover {
     margin: 8px 0;
 }
 
+/* IFRAME */
+iframe {
+    width: 100%;
+    max-width: 600px;
+    height: 400px;
+    border: 0;
+    border-radius: 15px;
+}
+
 /* FOOTER */
 footer {
     background-color: #333;
@@ -149,25 +148,24 @@ footer {
 </header>
 
 <nav>
-    <a href="#menu">Menu</a>
+    <a href="#sandwiches">Nos Sandwiches</a>
+    <a href="#desserts">Desserts</a>
     <a href="#panier">Panier</a>
     <a href="#contact">Contact</a>
+    <a href="#location">Localisation</a>
 </nav>
 
-<!-- MENU -->
-<section id="menu">   
-<h2>Notre Menu</h2>
+<!-- SANDWICHES -->
+<section id="sandwiches">   
+<h2>Nos Sandwiches</h2>
 
 <div class="menu-grid">   
-
     <div class="menu-card">
         <img src="https://amiraspantry.com/wp-content/uploads/2019/06/IG-1-500x500.jpg" alt="Shawarma Poulet" class="menu-img">
         <h3>Shawarma Poulet</h3>
         <p>Poulet mariné & sauce maison</p>
         <p class="price">35 DH</p>
-        <button onclick="ajouterAuPanier('Shawarma Poulet', 35)">
-            Ajouter au panier
-        </button>
+        <button onclick="ajouterAuPanier('Shawarma Poulet', 35)">Ajouter au panier</button>
     </div>
 
     <div class="menu-card">
@@ -175,9 +173,7 @@ footer {
         <h3>Shawarma Viande</h3>
         <p>Bœuf épicé oriental</p>
         <p class="price">40 DH</p>
-        <button onclick="ajouterAuPanier('Shawarma Viande', 40)">
-            Ajouter au panier
-        </button>
+        <button onclick="ajouterAuPanier('Shawarma Viande', 40)">Ajouter au panier</button>
     </div>
 
     <div class="menu-card">
@@ -185,9 +181,7 @@ footer {
         <h3>Shawarma Mixte</h3>
         <p>Poulet + viande</p>
         <p class="price">45 DH</p>
-        <button onclick="ajouterAuPanier('Shawarma Mixte', 45)">
-            Ajouter au panier
-        </button>
+        <button onclick="ajouterAuPanier('Shawarma Mixte', 45)">Ajouter au panier</button>
     </div>
 
     <div class="menu-card">
@@ -195,27 +189,56 @@ footer {
         <h3>Shawarma Falafel</h3>
         <p>Falafel et sauce</p>
         <p class="price">38 DH</p>
-        <button onclick="ajouterAuPanier('Shawarma Fromage', 38)">
-            Ajouter au panier
-        </button>
+        <button onclick="ajouterAuPanier('Shawarma Falafel', 38)">Ajouter au panier</button>
+    </div>
+    <div class="menu-card">
+        <img src="https://th.bing.com/th/id/R.aa3c7a87765af9101b7685e0aa09bac2?rik=jA%2bR7vw%2fS4SDWw&pid=ImgRaw&r=0" alt="Frite" class="menu-img">
+        <h3>Frite</h3>
+        <p class="price">10 DH</p>
+        <button onclick="ajouterAuPanier('Frite', 10)">Ajouter au panier</button>
+    </div>
+    <div class="menu-card">
+        <img src="https://intervalledeco.ma/wp-content/uploads/2023/05/Images-ARTICLES-ID-1024-%C3%97-720-px-salade-marocaine-768x540.jpg" alt="Salade Marocaine" class="menu-img">
+        <h3>Salade Marocaine</h3>
+        <p class="price">18 DH</p>
+        <button onclick="ajouterAuPanier('Salade Marocaine', 18)">Ajouter au panier</button>
+    </div>
+</div>
+</section>
+
+<!-- DESSERTS -->
+<section id="desserts">   
+<h2>Desserts</h2>
+
+<div class="menu-grid">   
+    <div class="menu-card">
+        <img src="https://bitezly.com/wp-content/uploads/2025/06/3-Greek-Baklava-Recipe.jpg" alt="Baklava" class="menu-img">
+        <h3>Baklava</h3>
+        <p class="price">20 DH</p>
+        <button onclick="ajouterAuPanier('Baklava', 20)">Ajouter au panier</button>
     </div>
 
+    <div class="menu-card">
+        <img src="https://i.pinimg.com/originals/b1/4b/63/b14b63b1c8f9accead01fa2d395229d9.png" alt="Mouhalabieh" class="menu-img">
+        <h3>Mouhalabieh</h3>
+        <p class="price">18 DH</p>
+        <button onclick="ajouterAuPanier('Mouhalabieh', 18)">Ajouter au panier</button>
+    </div>
+    <div class="menu-card">
+        <img src="https://cdn.siasat.com/wp-content/uploads/2022/12/Kunafa-Dec4.jpg" alt="Kounafa" class="menu-img">
+        <h3>Kounafa</h3>
+        <p class="price">25 DH</p>
+        <button onclick="ajouterAuPanier('Kounafa', 25)">Ajouter au panier</button>
+    </div>
 </div>
 </section>
 
 <!-- PANIER -->
 <section id="panier">
 <h2>🛒 Votre Panier</h2>
-
 <div id="panier-liste"></div>
-
-<p style="text-align:center; font-weight:bold;">
-Total : <span id="total">0</span> DH
-</p>
-
-<button onclick="commanderPanier()" style="display:block;margin:20px auto;">
-Commander via WhatsApp
-</button>
+<p style="text-align:center; font-weight:bold;">Total : <span id="total">0</span> DH</p>
+<button onclick="commanderPanier()" style="display:block;margin:20px auto;">Commander via WhatsApp</button>
 </section>
 
 <!-- CONTACT -->
@@ -226,29 +249,24 @@ Commander via WhatsApp
 🕒 11h - 00h
 </p>
 </section>
+
 <!-- LOCALISATION -->
 <section id="location">
-  <h2>📍 Localisation</h2>
-  <div style="text-align:center;">
-    <iframe 
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3320.123456!2d-7.589843!3d33.573110!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xdxxx!2sShawarma%20Al-Beik!5e0!3m2!1sar!2sma!4v1699999999999!5m2!1sar!2sma" 
-      width="600" 
-      height="450" 
-      style="border:0; border-radius:15px;" 
-      allowfullscreen="" 
-      loading="lazy"
-      referrerpolicy="no-referrer-when-downgrade">
-    </iframe>
-  </div>
-</section>
-<!-- LOCALISATION -->
-<section id="location">
-  ...
+<h2>📍 Localisation</h2>
+<div style="text-align:center;">
+<iframe 
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3320.123456!2d-7.589843!3d33.573110!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xdxxx!2sShawarma%20Al-Beik!5e0!3m2!1sar!2sma!4v1699999999999!5m2!1sar!2sma" 
+    allowfullscreen="" 
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade">
+</iframe>
+</div>
 </section>
 
 <footer>
-<p>© 2025 Shawarma Palace — Tous droits réservés</p>
+<p>© 2025 شوارما البيك — Tous droits réservés</p>
 </footer>
+
 <script>
 let panier = [];
 let total = 0;
@@ -262,13 +280,10 @@ function ajouterAuPanier(produit, prix) {
 function afficherPanier() {
     const liste = document.getElementById("panier-liste");
     const totalSpan = document.getElementById("total");
-
     liste.innerHTML = "";
-
     panier.forEach((item, index) => {
         liste.innerHTML += `<p>${index + 1}. ${item.produit} - ${item.prix} DH</p>`;
     });
-
     totalSpan.textContent = total;
 }
 
@@ -277,20 +292,13 @@ function commanderPanier() {
         alert("Votre panier est vide !");
         return;
     }
-
     const numero = "212682300363";
     let message = " Nouvelle commande\n\n";
-
     panier.forEach(item => {
         message += `🍽️ ${item.produit} - ${item.prix} DH\n`;
     });
-
     message += `\n💰 Total : ${total} DH`;
-
-    window.open(
-        `https://wa.me/${numero}?text=${encodeURIComponent(message)}`,
-        "_blank"
-    );
+    window.open(`https://wa.me/${numero}?text=${encodeURIComponent(message)}`, "_blank");
 }
 </script>
 
