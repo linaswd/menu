@@ -25,7 +25,7 @@ body {
 header {
     background-image: 
         linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-        url("https://th.bing.com/th/id/R.255a341322e12df290c7156c76e892b9");
+        url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjtT7CJleA3YljtE2c_Rs32NcAVO4a2K4JxQ&s");
     background-size: cover;
     background-position: center;
     color: white;
@@ -75,10 +75,18 @@ section h2 {
 
 .menu-card {
     background: white;
-    padding: 25px;
+    padding: 20px;
     border-radius: 15px;
     box-shadow: 0 8px 20px rgba(0,0,0,0.1);
     text-align: center;
+}
+
+.menu-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+    margin-bottom: 15px;
 }
 
 .price {
@@ -132,12 +140,13 @@ footer {
 </nav>
 
 <!-- MENU -->
-<section id="menu">
+<section id="menu">   
 <h2>Notre Menu</h2>
 
 <div class="menu-grid">   
 
     <div class="menu-card">
+        <img src="https://amiraspantry.com/wp-content/uploads/2019/06/IG-1-500x500.jpg" alt="Shawarma Poulet" class="menu-img">
         <h3>Shawarma Poulet</h3>
         <p>Poulet mariné & sauce maison</p>
         <p class="price">35 DH</p>
@@ -147,6 +156,7 @@ footer {
     </div>
 
     <div class="menu-card">
+        <img src="https://th.bing.com/th/id/R.7526ba8e39096674fe2f91ba32dae6df?rik=RGVGgFdj9bFMSQ&riu=http%3a%2f%2fcdn.shopify.com%2fs%2ffiles%2f1%2f0577%2f2905%2f6944%2farticles%2fshawarma-lebanon_1200x1200.jpg%3fv%3d1646230731&ehk=hf1utJMGYskbnD9XzytcQSgcdlDGLy9ARavK8CbLWnI%3d&risl=&pid=ImgRaw&r=0" alt="Shawarma Viande" class="menu-img">
         <h3>Shawarma Viande</h3>
         <p>Bœuf épicé oriental</p>
         <p class="price">40 DH</p>
@@ -156,6 +166,7 @@ footer {
     </div>
 
     <div class="menu-card">
+        <img src="https://www.desidakaar.com/wp-content/uploads/2020/02/shawarma.jpg" alt="Shawarma Mixte" class="menu-img">
         <h3>Shawarma Mixte</h3>
         <p>Poulet + viande</p>
         <p class="price">45 DH</p>
@@ -165,8 +176,9 @@ footer {
     </div>
 
     <div class="menu-card">
-        <h3>Shawarma Fromage</h3>
-        <p>Fondant & savoureux</p>
+        <img src="https://wkefbybaeklskadsmwlu.supabase.co/storage/v1/object/public/Recipe%20Images/87089_falafel-shawarma.webp" alt="Shawarma Falafel" class="menu-img">
+        <h3>Shawarma Falafel</h3>
+        <p>Falafel et sauce</p>
         <p class="price">38 DH</p>
         <button onclick="ajouterAuPanier('Shawarma Fromage', 38)">
             Ajouter au panier
@@ -234,7 +246,7 @@ function commanderPanier() {
     }
 
     const numero = "212682300363";
-    let message =    " Nouvelle commande\n\n";
+    let message = " Nouvelle commande\n\n";
 
     panier.forEach(item => {
         message += `🍽️ ${item.produit} - ${item.prix} DH\n`;
