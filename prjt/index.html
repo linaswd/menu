@@ -9,193 +9,193 @@
 <link rel="stylesheet" href="style.css">
 </head>
 
-<body>  
+<body>
 
 <a href="#panier" id="cart-floating">
-    🛒 <span id="float-count">0</span> | <span id="float-total">0</span> DH
+    🛒 <span id="float-count">0</span> | <span id="float-total">0</span> DH
 </a>
 
 <header>
-    <h1>شوارما البيك</h1>
-    <p>Chaque bouchée raconte une histoire de saveurs</p>
+    <h1>شوارما البيك</h1>
+    <p>Chaque bouchée raconte une histoire de saveurs</p>
 </header>
 
 <nav>
-    <a href="#sandwiches">Sandwiches</a>
-    <a href="#desserts">Desserts</a>
-    <a href="#panier">🛒 Panier</a>
-    <a href="#contact">Contact</a>
+    <a href="#sandwiches">Sandwiches</a>
+    <a href="#desserts">Desserts</a>
+    <a href="#panier">🛒 Panier</a>
+    <a href="#contact">Contact</a>
 </nav>
 
-<section id="sandwiches">   
-    <h2>Nos Sandwiches</h2>
-    <div class="menu-grid">   
-        <div class="menu-card">
-            <div class="menu-img-container">
-                <img src="https://amiraspantry.com/wp-content/uploads/2019/06/IG-1-500x500.jpg" alt="Shawarma Poulet" class="menu-img">
-            </div>
-            <h3>Shawarma Poulet</h3>
-            <p>Poulet mariné & sauce maison</p>
-            <p class="price">35 DH</p>
-            <div class="controls">
-                <button class="btn-minus" onclick="modifierQuantite('Shawarma Poulet', 35, -1, 'q-poul')">-</button>
-                <span id="q-poul" class="count-display">0</span>
-                <button onclick="modifierQuantite('Shawarma Poulet', 35, 1, 'q-poul')">+</button>
-            </div>
-        </div>
+<section id="sandwiches">   
+    <h2>Nos Sandwiches</h2>
+    <div class="menu-grid">   
+        <div class="menu-card">
+            <div class="menu-img-container">
+                <img src="https://amiraspantry.com/wp-content/uploads/2019/06/IG-1-500x500.jpg" alt="Shawarma Poulet" class="menu-img">
+            </div>
+            <h3>Shawarma Poulet</h3>
+            <p>Poulet mariné & sauce maison</p>
+            <p class="price">35 DH</p>
+            <div class="controls">
+                <button class="btn-minus" onclick="modifierQuantite('Shawarma Poulet', 35, -1, 'q-poul')">-</button>
+                <span id="q-poul" class="count-display">0</span>
+                <button onclick="modifierQuantite('Shawarma Poulet', 35, 1, 'q-poul')">+</button>
+            </div>
+        </div>
 
-        <div class="menu-card">
-            <div class="menu-img-container">
-                <img src="https://th.bing.com/th/id/R.7526ba8e39096674fe2f91ba32dae6df?rik=RGVGgFdj9bFMSQ&riu=http%3a%2f%2fcdn.shopify.com%2fs%2ffiles%2f1%2f0577%2f2905%2f6944%2farticles%2fshawarma-lebanon_1200x1200.jpg%3fv%3d1646230731&ehk=hf1utJMGYskbnD9XzytcQSgcdlDGLy9ARavK8CbLWnI%3d&risl=&pid=ImgRaw&r=0" alt="Shawarma Viande" class="menu-img">
-            </div>
-            <h3>Shawarma Viande</h3>
-            <p>Bœuf épicé oriental</p>
-            <p class="price">40 DH</p>
-            <div class="controls">
-                <button class="btn-minus" onclick="modifierQuantite('Shawarma Viande', 40, -1, 'q-viande')">-</button>
-                <span id="q-viande" class="count-display">0</span>
-                <button onclick="modifierQuantite('Shawarma Viande', 40, 1, 'q-viande')">+</button>
-            </div>
-        </div>
+        <div class="menu-card">
+            <div class="menu-img-container">
+                <img src="https://th.bing.com/th/id/R.7526ba8e39096674fe2f91ba32dae6df?rik=RGVGgFdj9bFMSQ&riu=http%3a%2f%2fcdn.shopify.com%2fs%2ffiles%2f1%2f0577%2f2905%2f6944%2farticles%2fshawarma-lebanon_1200x1200.jpg%3fv%3d1646230731&ehk=hf1utJMGYskbnD9XzytcQSgcdlDGLy9ARavK8CbLWnI%3d&risl=&pid=ImgRaw&r=0" alt="Shawarma Viande" class="menu-img">
+            </div>
+            <h3>Shawarma Viande</h3>
+            <p>Bœuf épicé oriental</p>
+            <p class="price">40 DH</p>
+            <div class="controls">
+                <button class="btn-minus" onclick="modifierQuantite('Shawarma Viande', 40, -1, 'q-viande')">-</button>
+                <span id="q-viande" class="count-display">0</span>
+                <button onclick="modifierQuantite('Shawarma Viande', 40, 1, 'q-viande')">+</button>
+            </div>
+        </div>
 
-        <div class="menu-card">
-            <div class="menu-img-container">
-                <img src="https://www.desidakaar.com/wp-content/uploads/2020/02/shawarma.jpg" alt="Shawarma Mixte" class="menu-img">
-            </div>
-            <h3>Shawarma Mixte</h3>
-            <p>Poulet + viande</p>
-            <p class="price">45 DH</p>
-            <div class="controls">
-                <button class="btn-minus" onclick="modifierQuantite('Shawarma Mixte', 45, -1, 'q-mixte')">-</button>
-                <span id="q-mixte" class="count-display">0</span>
-                <button onclick="modifierQuantite('Shawarma Mixte', 45, 1, 'q-mixte')">+</button>
-            </div>
-        </div>
+        <div class="menu-card">
+            <div class="menu-img-container">
+                <img src="https://www.desidakaar.com/wp-content/uploads/2020/02/shawarma.jpg" alt="Shawarma Mixte" class="menu-img">
+            </div>
+            <h3>Shawarma Mixte</h3>
+            <p>Poulet + viande</p>
+            <p class="price">45 DH</p>
+            <div class="controls">
+                <button class="btn-minus" onclick="modifierQuantite('Shawarma Mixte', 45, -1, 'q-mixte')">-</button>
+                <span id="q-mixte" class="count-display">0</span>
+                <button onclick="modifierQuantite('Shawarma Mixte', 45, 1, 'q-mixte')">+</button>
+            </div>
+        </div>
 
-        <div class="menu-card">
-            <div class="menu-img-container">
-                <img src="https://wkefbybaeklskadsmwlu.supabase.co/storage/v1/object/public/Recipe%20Images/87089_falafel-shawarma.webp" alt="Shawarma Falafel" class="menu-img">
-            </div>
-            <h3>Shawarma Falafel</h3>
-            <p>Falafel et sauce</p>
-            <p class="price">38 DH</p>
-            <div class="controls">
-                <button class="btn-minus" onclick="modifierQuantite('Shawarma Falafel', 38, -1, 'q-fala')">-</button>
-                <span id="q-fala" class="count-display">0</span>
-                <button onclick="modifierQuantite('Shawarma Falafel', 38, 1, 'q-fala')">+</button>
-            </div>
-        </div>
+        <div class="menu-card">
+            <div class="menu-img-container">
+                <img src="https://wkefbybaeklskadsmwlu.supabase.co/storage/v1/object/public/Recipe%20Images/87089_falafel-shawarma.webp" alt="Shawarma Falafel" class="menu-img">
+            </div>
+            <h3>Shawarma Falafel</h3>
+            <p>Falafel et sauce</p>
+            <p class="price">38 DH</p>
+            <div class="controls">
+                <button class="btn-minus" onclick="modifierQuantite('Shawarma Falafel', 38, -1, 'q-fala')">-</button>
+                <span id="q-fala" class="count-display">0</span>
+                <button onclick="modifierQuantite('Shawarma Falafel', 38, 1, 'q-fala')">+</button>
+            </div>
+        </div>
 
-        <div class="menu-card">
-            <div class="menu-img-container">
-                <img src="https://th.bing.com/th/id/R.aa3c7a87765af9101b7685e0aa09bac2?rik=jA%2bR7vw%2fS4SDWw&pid=ImgRaw&r=0" alt="Frite" class="menu-img">
-            </div>
-            <h3>Frite</h3>
-            <p class="price">10 DH</p>
-            <div class="controls">
-                <button class="btn-minus" onclick="modifierQuantite('Frite', 10, -1, 'q-frite')">-</button>
-                <span id="q-frite" class="count-display">0</span>
-                <button onclick="modifierQuantite('Frite', 10, 1, 'q-frite')">+</button>
-            </div>
-        </div>
+        <div class="menu-card">
+            <div class="menu-img-container">
+                <img src="https://th.bing.com/th/id/R.aa3c7a87765af9101b7685e0aa09bac2?rik=jA%2bR7vw%2fS4SDWw&pid=ImgRaw&r=0" alt="Frite" class="menu-img">
+            </div>
+            <h3>Frite</h3>
+            <p class="price">10 DH</p>
+            <div class="controls">
+                <button class="btn-minus" onclick="modifierQuantite('Frite', 10, -1, 'q-frite')">-</button>
+                <span id="q-frite" class="count-display">0</span>
+                <button onclick="modifierQuantite('Frite', 10, 1, 'q-frite')">+</button>
+            </div>
+        </div>
 
-        <div class="menu-card">
-            <div class="menu-img-container">
-                <img src="https://intervalledeco.ma/wp-content/uploads/2023/05/Images-ARTICLES-ID-1024-%C3%97-720-px-salade-marocaine-768x540.jpg" alt="Salade Marocaine" class="menu-img">
-            </div>
-            <h3>Salade Marocaine</h3>
-            <p class="price">18 DH</p>
-            <div class="controls">
-                <button class="btn-minus" onclick="modifierQuantite('Salade Marocaine', 18, -1, 'q-salade')">-</button>
-                <span id="q-salade" class="count-display">0</span>
-                <button onclick="modifierQuantite('Salade Marocaine', 18, 1, 'q-salade')">+</button>
-            </div>
-        </div>
-    </div>
+        <div class="menu-card">
+            <div class="menu-img-container">
+                <img src="https://intervalledeco.ma/wp-content/uploads/2023/05/Images-ARTICLES-ID-1024-%C3%97-720-px-salade-marocaine-768x540.jpg" alt="Salade Marocaine" class="menu-img">
+            </div>
+            <h3>Salade Marocaine</h3>
+            <p class="price">18 DH</p>
+            <div class="controls">
+                <button class="btn-minus" onclick="modifierQuantite('Salade Marocaine', 18, -1, 'q-salade')">-</button>
+                <span id="q-salade" class="count-display">0</span>
+                <button onclick="modifierQuantite('Salade Marocaine', 18, 1, 'q-salade')">+</button>
+            </div>
+        </div>
+    </div>
 </section>
 
-<section id="desserts">   
-    <h2>Desserts</h2>
-    <div class="menu-grid">   
-        <div class="menu-card">
-            <div class="menu-img-container">
-                <img src="https://bitezly.com/wp-content/uploads/2025/06/3-Greek-Baklava-Recipe.jpg" alt="Baklava" class="menu-img">
-            </div>
-            <h3>Baklava</h3>
-            <p class="price">20 DH</p>
-            <div class="controls">
-                <button class="btn-minus" onclick="modifierQuantite('Baklava', 20, -1, 'q-bak')">-</button>
-                <span id="q-bak" class="count-display">0</span>
-                <button onclick="modifierQuantite('Baklava', 20, 1, 'q-bak')">+</button>
-            </div>
-        </div>
+<section id="desserts">   
+    <h2>Desserts</h2>
+    <div class="menu-grid">   
+        <div class="menu-card">
+            <div class="menu-img-container">
+                <img src="https://bitezly.com/wp-content/uploads/2025/06/3-Greek-Baklava-Recipe.jpg" alt="Baklava" class="menu-img">
+            </div>
+            <h3>Baklava</h3>
+            <p class="price">20 DH</p>
+            <div class="controls">
+                <button class="btn-minus" onclick="modifierQuantite('Baklava', 20, -1, 'q-bak')">-</button>
+                <span id="q-bak" class="count-display">0</span>
+                <button onclick="modifierQuantite('Baklava', 20, 1, 'q-bak')">+</button>
+            </div>
+        </div>
 
-        <div class="menu-card">
-            <div class="menu-img-container">
-                <img src="https://i.pinimg.com/originals/b1/4b/63/b14b63b1c8f9accead01fa2d395229d9.png" alt="Mouhalabieh" class="menu-img">
-            </div>
-            <h3>Mouhalabieh</h3>
-            <p class="price">18 DH</p>
-            <div class="controls">
-                <button class="btn-minus" onclick="modifierQuantite('Mouhalabieh', 18, -1, 'q-mou')">-</button>
-                <span id="q-mou" class="count-display">0</span>
-                <button onclick="modifierQuantite('Mouhalabieh', 18, 1, 'q-mou')">+</button>
-            </div>
-        </div>
-        
-        <div class="menu-card">
-            <div class="menu-img-container">
-                <img src="https://cdn.siasat.com/wp-content/uploads/2022/12/Kunafa-Dec4.jpg" alt="Kounafa" class="menu-img">
-            </div>
-            <h3>Kounafa</h3>
-            <p class="price">25 DH</p>
-            <div class="controls">
-                <button class="btn-minus" onclick="modifierQuantite('Kounafa', 25, -1, 'q-kou')">-</button>
-                <span id="q-kou" class="count-display">0</span>
-                <button onclick="modifierQuantite('Kounafa', 25, 1, 'q-kou')">+</button>
-            </div>
-        </div>
-    </div>
+        <div class="menu-card">
+            <div class="menu-img-container">
+                <img src="https://i.pinimg.com/originals/b1/4b/63/b14b63b1c8f9accead01fa2d395229d9.png" alt="Mouhalabieh" class="menu-img">
+            </div>
+            <h3>Mouhalabieh</h3>
+            <p class="price">18 DH</p>
+            <div class="controls">
+                <button class="btn-minus" onclick="modifierQuantite('Mouhalabieh', 18, -1, 'q-mou')">-</button>
+                <span id="q-mou" class="count-display">0</span>
+                <button onclick="modifierQuantite('Mouhalabieh', 18, 1, 'q-mou')">+</button>
+            </div>
+        </div>
+        
+        <div class="menu-card">
+            <div class="menu-img-container">
+                <img src="https://cdn.siasat.com/wp-content/uploads/2022/12/Kunafa-Dec4.jpg" alt="Kounafa" class="menu-img">
+            </div>
+            <h3>Kounafa</h3>
+            <p class="price">25 DH</p>
+            <div class="controls">
+                <button class="btn-minus" onclick="modifierQuantite('Kounafa', 25, -1, 'q-kou')">-</button>
+                <span id="q-kou" class="count-display">0</span>
+                <button onclick="modifierQuantite('Kounafa', 25, 1, 'q-kou')">+</button>
+            </div>
+        </div>
+    </div>
 </section>
 
 <section id="panier">
-    <h2>🛒 Votre Panier</h2>
-    <div id="panier-liste" style="min-height: 50px;">
-        <p style="text-align:center; color:grey;">Le panier est vide</p>
-    </div>
-    <div style="text-align:center; padding: 20px;">
-        <p style="font-size:24px; font-weight:bold; color: #7a2e00;">Total : <span id="total">0</span> DH</p>
-        <button onclick="commanderPanier()" style="margin-top:20px; padding: 15px 40px; font-size: 18px; width: 100%; max-width: 400px;">
-            Commander via WhatsApp
-        </button>
-    </div>
+    <h2>🛒 Votre Panier</h2>
+    <div id="panier-liste" style="min-height: 50px;">
+        <p style="text-align:center; color:grey;">Le panier est vide</p>
+    </div>
+    <div style="text-align:center; padding: 20px;">
+        <p style="font-size:24px; font-weight:bold; color: #7a2e00;">Total : <span id="total">0</span> DH</p>
+        <button onclick="commanderPanier()" style="margin-top:20px; padding: 15px 40px; font-size: 18px; width: 100%; max-width: 400px;">
+            Commander via WhatsApp
+        </button>
+    </div>
 </section>
 
 <section id="contact">
-    <h2>📍 Localisation & Contact</h2>
-    <div style="text-align:center;">
-        <p style="margin-bottom: 20px; font-size: 18px;">📞 +212 6 82 30 03 63 | 🕒 11h - 00h</p>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3323.846383617154!2d-7.589843384797262!3d33.58330758073574!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda7d29279024097%3A0xb366a7b73892c90e!2sCasablanca!5e0!3m2!1sfr!2sma!4v1625000000000!5m2!1sfr!2sma"></iframe>
-    </div>
+    <h2>📍 Localisation & Contact</h2>
+    <div style="text-align:center;">
+        <p style="margin-bottom: 20px; font-size: 18px;">📞 +212 6 82 30 03 63 | 🕒 11h - 00h</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3323.846383617154!2d-7.589843384797262!3d33.58330758073574!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda7d29279024097%3A0xb366a7b73892c90e!2sCasablanca!5e0!3m2!1sfr!2sma!4v1625000000000!5m2!1sfr!2sma"></iframe>
+    </div>
 </section>
 
 <footer>
-    <div class="footer-container">
-        <div class="footer-section about">
-            <h3>شوارما البيك</h3>
-            <p>Passionnés par la cuisine orientale authentique, nous préparons chaque jour nos viandes avec des épices sélectionnées pour vous offrir le goût véritable du Shawarma traditionnel.</p>
-        </div>
+    <div class="footer-container">
+        <div class="footer-section about">
+            <h3>شوارما البيك</h3>
+            <p>Passionnés par la cuisine orientale authentique, nous préparons chaque jour nos viandes avec des épices sélectionnées pour vous offrir le goût véritable du Shawarma traditionnel.</p>
+        </div>
 
-        <div class="footer-section contact">
-            <h3>Contact info</h3>
-            <p>📍 Casablanca, Maroc</p>
-            <p>📞 +212 682300363 / +212 626317769</p>
-            <p>🕒 Lun - Dim : 11h00 - 00h00</p>
-        </div>
-    </div>
-    <div class="footer-bottom">
-        <p>© 2025 شوارما البيك — Fait avec ❤️ pour les gourmands — Tous droits réservés</p>
-    </div>
+        <div class="footer-section contact">
+            <h3>Contact info</h3>
+            <p>📍 Casablanca, Maroc</p>
+            <p>📞 +212 682300363 / +212 626317769</p>
+            <p>🕒 Lun - Dim : 11h00 - 00h00</p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>© 2025 شوارما البيك — Fait avec ❤️ pour les gourmands — Tous droits réservés</p>
+    </div>
 </footer>
 
 <script src="script.js"></script>
