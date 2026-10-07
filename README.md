@@ -33,6 +33,6 @@ Le code est organisé de manière modulaire pour faciliter la maintenance :
 
 ## Contact et Informations
 
-- **Téléphone :** +212 682300363 / +212 626317769
+- **Téléphone :** xxx / xxx
 - **Horaires d'ouverture :** Lundi au Dimanche, de 11h00 à 00h00
 - **Localisation :** Casablanca, Maroc
